@@ -1,1 +1,47 @@
 /* 헤더, 푸터 공통 디자인 파일 */
+html, body {}
+#allWrap {
+}
+
+#allWrap header {}
+
+/* top bnr 라인 배너 */
+#allWrap header .top_banner {
+    background-color: green;
+    display: flex; flex-flow: row nowrap;
+    width: 100%; 
+    padding: 0 80px;
+
+}
+#allWrap header .top_banner p {
+    text-align: center;
+    margin: 0 auto;
+    height: 40px;
+    line-height: 40px;
+    color: #ffff;
+    font-size: 0.875em;
+    font-weight: 400;
+
+}
+#allWrap header .top_banner .banner_close {
+    color: #ffff;
+}
+
+/* gnb */
+/* nav - gnb_wrap */
+#allWrap header .gnb_wrap {
+    background-color: aqua;
+}
+/* 로고 */
+#allWrap header .gnb_wrap .gnb_left {}
+#allWrap header .gnb_wrap .gnb_left h1{}
+#allWrap header .gnb_wrap .gnb_left h1 a{}
+#allWrap header .gnb_wrap .gnb_left h1 a img{}
+
+/* 네비 -메뉴 카테고리 */
+#allWrap header .gnb_wrap .gnb_center {}
+#allWrap header .gnb_wrap .gnb_center .gnb_menu{}
+#allWrap header .gnb_wrap .gnb_center .gnb_menu li{}
+#allWrap header .gnb_wrap .gnb_center .gnb_menu li button{}
+
+/* lnb wrap 전체묶음 */
