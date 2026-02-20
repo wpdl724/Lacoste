@@ -1,23 +1,25 @@
 /* 헤더, 푸터 공통 디자인 파일 */
-html, body {}
-#allWrap {
+html, body {
 }
+#allWrap {}
 
-#allWrap header {}
+#allWrap header {
+    width: 100%;
+    position: relative;
+}
 
 /* top bnr 라인 배너 */
 #allWrap header .top_banner {
-    background-color: green;
+    background-color: #002D18;
     display: flex; flex-flow: row nowrap;
-    width: 100%; 
+    width: 100%; height: 45px;
     padding: 0 80px;
 
 }
 #allWrap header .top_banner p {
     text-align: center;
     margin: 0 auto;
-    height: 40px;
-    line-height: 40px;
+    line-height: 45px;
     color: #ffff;
     font-size: 0.875em;
     font-weight: 400;
@@ -31,17 +33,46 @@ html, body {}
 /* nav - gnb_wrap */
 #allWrap header .gnb_wrap {
     background-color: aqua;
+    display: flex; flex-flow: row nowrap;
 }
 /* 로고 */
 #allWrap header .gnb_wrap .gnb_left {}
-#allWrap header .gnb_wrap .gnb_left h1{}
+#allWrap header .gnb_wrap .gnb_left h1{
+    background-color: beige;
+    width: 66px;
+}
 #allWrap header .gnb_wrap .gnb_left h1 a{}
-#allWrap header .gnb_wrap .gnb_left h1 a img{}
+#allWrap header .gnb_wrap .gnb_left h1 a img{
+}
 
 /* 네비 -메뉴 카테고리 */
-#allWrap header .gnb_wrap .gnb_center {}
-#allWrap header .gnb_wrap .gnb_center .gnb_menu{}
+/* gnb_center */
+#allWrap header .gnb_wrap .gnb_center {
+}
+#allWrap header .gnb_wrap .gnb_center .gnb_menu{
+    background-color: yellow;
+    display: flex; flex-flow: row nowrap;
+}
 #allWrap header .gnb_wrap .gnb_center .gnb_menu li{}
 #allWrap header .gnb_wrap .gnb_center .gnb_menu li button{}
 
 /* lnb wrap 전체묶음 */
+#allWrap header .gnb_wrap .lnb_wrap {}
+#allWrap header .gnb_wrap .lnb_wrap .lnb{}
+#allWrap header .gnb_wrap .lnb_wrap .lnb_inner{}
+
+/* lnb 왼쪽내용 (신제품,베스트셀러,2026겨울룩북) + discover btn*/
+#allWrap header .gnb_wrap .lnb_wrap .lnb_inner .lnb_left{}
+#allWrap header .gnb_wrap .lnb_wrap .lnb_inner .lnb_left .lnb_feature{}
+#allWrap header .gnb_wrap .lnb_wrap .lnb_inner .lnb_left .lnb_feature li{}
+#allWrap header .gnb_wrap .lnb_wrap .lnb_inner .lnb_left .lnb_feature li a{}
+#allWrap header .gnb_wrap .lnb_wrap .lnb_inner .lnb_left .lnb_discover {}
+
+/* lnb 오른쪽 내용 (상의, 하의, 스포츠웨어..등) */
+#allWrap header .gnb_wrap .lnb_wrap .lnb_inner .lnb_right{}
+#allWrap header .gnb_wrap .lnb_wrap .lnb_inner .lnb_right .depth2{}
+#allWrap header .gnb_wrap .lnb_wrap .lnb_inner .lnb_right .depth2 li{}
+#allWrap header .gnb_wrap .lnb_wrap .lnb_inner .lnb_right .depth2 li a{}
+
+#allWrap header .gnb_wrap .lnb_wrap .lnb_inner .lnb_right .depth2 li .depth3{}
+#allWrap header .gnb_wrap .lnb_wrap .lnb_inner .lnb_right .depth2 li .depth3 li{}
